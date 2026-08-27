@@ -9,35 +9,49 @@
 </head>
 
 <body>
+
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+
     <!--Vamos a darle contexto al usuario-->
     <div class="card">
         <h2>Conversor de Grados Celsius</h2>
-        <h4>¡Bienvenido!</h4>
-        <p>En esta página podras realizar la conversión<br>
-        de grados centigrados (ºC) a grados Fahrenheit (ºF) y Kelvin (K)</p>
-        
-        <h4>¿Cómo puedes empezar?</h4>
-        <p>¡Es muy sencillo, solo ingresa aca abajo el valor numérico<br>
-        de la cantidad a convertir y da click en el boton para realizar la conversion.</p>
+        <div class="welcome">
+            <h4>¡Bienvenido!</h4>
+            <p>En esta página podras realizar la conversión de grados centigrados (ºC) a grados Fahrenheit (ºF) y Kelvin (K)</p>
+        </div>
 
-        <h3>IMPORTANTE</h3>
-        <p>¡Recuerda! Esta calculadora solo podra realizar conversiones de Celsius a Fahrenheit y Kelvin.</p>
+        <div class="how2">
+            <h4>¿Cómo puedes empezar?</h4>
+            <p>¡Es muy sencillo, solo ingresa aca abajo el valor numérico de la cantidad a convertir y da click en el boton para realizar la conversion.</p>
+        </div>
+
+        <div class="important">
+            <h3>IMPORTANTE</h3>
+            <p>¡Recuerda! Esta calculadora solo podra realizar conversiones de Celsius a Fahrenheit y Kelvin.</p>
+        </div>
 
         <div class="inputCard">
             <!--Colocamos un input para poder ingresar los datos-->
             <label for="celsius input">Grados Celsius:</label>
-            <input type="number" id="celsius" placeholder="Ej. 25">
-            <button id="convertirBtn">Convertir</button>
+            <div class="inputContainer">
+                <input type="number" id="celsius" placeholder="Ej. 25">
+                <button id="convertirBtn">Convertir</button>
+            </div>
         </div>
 
         <div class="resultCard">
             <!--Aqui se mostrara el resultado-->
             <h3>Resultados: </h3>
-            <div class="resultBox">
-                <p>Fahrenheit: <span id="resultadoFahrenheit" ></span>ºF</p>
-            </div>
-            <div class="ResultBox">
-                <p>Kelvin: <span id="resultadoKelvin" ></span>K</p>
+            <div class="resultContainer">
+                <div class="resultBox">
+                    <span class="resultLabel">Fahrenheit</span>
+                    <p><span id="resultadoFahrenheit" ></span>ºF</p>
+                </div>
+                <div class="ResultBox">
+                    <span class="resultLabel">Kelvin</span>
+                    <p><span id="resultadoKelvin" ></span>K</p>
+                </div>
             </div>
         </div>
 
