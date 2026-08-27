@@ -10,20 +10,17 @@
 
 <body>
 
-    <div class="circle circle-1"></div>
-    <div class="circle circle-2"></div>
-
     <!--Vamos a darle contexto al usuario-->
     <div class="card">
         <h2>Conversor de Grados Celsius</h2>
-        <div class="welcome">
+        <div>
             <h4>¡Bienvenido!</h4>
-            <p>En esta página podras realizar la conversión de grados centigrados (ºC) a grados Fahrenheit (ºF) y Kelvin (K)</p>
+            <p>En esta página podras realizar la conversión de grados Centigrados (ºC) a grados Fahrenheit (ºF) y Kelvin (K)</p>
         </div>
 
-        <div class="how2">
+        <div>
             <h4>¿Cómo puedes empezar?</h4>
-            <p>¡Es muy sencillo, solo ingresa aca abajo el valor numérico de la cantidad a convertir y da click en el boton para realizar la conversion.</p>
+            <p>¡Es muy sencillo, solo ingresa en el recuadro de abajo el valor numérico de la cantidad a convertir y da click en el botón para realizar la conversión.</p>
         </div>
 
         <div class="important">
@@ -33,7 +30,7 @@
 
         <div class="inputCard">
             <!--Colocamos un input para poder ingresar los datos-->
-            <label for="celsius input">Grados Celsius:</label>
+            <label for="celsius">Grados Celsius:</label>
             <div class="inputContainer">
                 <input type="number" id="celsius" placeholder="Ej. 25">
                 <button id="convertirBtn">Convertir</button>
@@ -48,7 +45,7 @@
                     <span class="resultLabel">Fahrenheit</span>
                     <p><span id="resultadoFahrenheit" ></span>ºF</p>
                 </div>
-                <div class="ResultBox">
+                <div class="resultBox">
                     <span class="resultLabel">Kelvin</span>
                     <p><span id="resultadoKelvin" ></span>K</p>
                 </div>
