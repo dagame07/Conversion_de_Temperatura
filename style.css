@@ -219,3 +219,25 @@ button:active {
         padding: 24px;
     }
 }
+
+/* --- Mensajes de Error Personalizados --- */
+.error-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #e11d48; /* Un rosa/rojo intenso que resalta pero combina */
+    margin-bottom: 8px;
+    display: none; /* Oculto por defecto */
+    animation: fadeIn 0.3s ease;
+}
+
+/* Clase que aplicaremos al input mediante JS cuando haya un error */
+input.input-error {
+    border-color: #e11d48 !important;
+    box-shadow: 0 0 0 4px rgba(225, 29, 72, 0.15) !important;
+    background: rgba(255, 241, 242, 0.9); /* Fondo ligeramente rosado/cálido */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-3px); }
+    to { opacity: 1; transform: translateY(0); }
+}
