@@ -22,7 +22,7 @@ La conversión es únicamente desde Celsius: no convierte Fahrenheit o Kelvin de
 2. Abre `index.html` directamente en un navegador.
 3. Escribe una temperatura en el campo **Grados Celsius** y pulsa **Convertir**.
 
-Puedes visitar el sitio publicado: [Enlace al sitio](https://dagame07.github.io/Conversion_de_Temperatura/).
+Puedes visitar el sitio publicado: [Conversor de Temperatura](https://dagame07.github.io/Conversion_de_Temperatura/).
 
 También puedes servir la carpeta con cualquier servidor web estático local y abrir allí `index.html`. No se requiere un backend.
 
